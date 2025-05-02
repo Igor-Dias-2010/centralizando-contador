@@ -30,8 +30,8 @@ p{
 }
 button{
     margin-top: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 6px;
+    margin-right: 6px;
     /* width: auto;
     height: auto; */
     padding: 5px 10px;
@@ -43,9 +43,9 @@ button{
     transition: all 0.3s ease;
 }
 button:hover{
-    background-color: white;
-    color: black;
-    transform: scale(1.1);
+    background-color: black;
+    color: white;
+    transform: scale(1.2);
 }
 button:active{
     transform: scale(0.9);
@@ -59,12 +59,12 @@ button:active{
     transition: all 0.3s ease;
 }
 #reset:hover{
-    background-color: white;
-    color: black;
-    transform: scale(1.1);
+    background-color: black;
+    color: white;
+    transform: scale(1.2);
 }
 #reset:active{
-    transform: scale(0.9);
+    transform: scale(1.4);
     background-color: black;
     color: white;
 }

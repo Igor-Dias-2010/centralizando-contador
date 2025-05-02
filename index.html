@@ -11,20 +11,22 @@
         <h1>Contador</h1>
         <p id="resultado">0</p>
         <div>
+        <button id="botao" onclick="divcinco()">/5</button>
         <button id="botao" onclick="divdois()">/2</button>
         <button id="botao" onclick="menosum()">-1</button>
         <button id="reset" onclick="reset()">Reset</button>
         <button id="botao" onclick="maisum()">+1</button>
         <button id="botao" onclick="multidois()">*2</button>
+        <button id="botao" onclick="multicinco()">*5</button>
         </div>
     </div>
-    <button id="meubotao">VC ME ACHOU! clica</button>
+    <button id="meubotao">VC ME ACHOU! me clica.</button>
     <script>
 
         let numero = 0 
 
         const botao = document.querySelector("#meubotao")
-        botao.onclick = () => { alert("Vc realmente me achou, seu curioso! Agora manda print, vai")
+        botao.onclick = () => { alert("Você realmente me achou, seu curioso! Agora me manda print, vai.")
         render()}
 
 
@@ -36,8 +38,16 @@
             numero /= 2
             render()
         }
+        function divcinco(){
+            numero /= 5
+            render()
+        }
         function reset(){
             numero = 0
+            render()
+        }
+        function multicinco(){
+            numero *= 5
             render()
         }
         function multidois(){
